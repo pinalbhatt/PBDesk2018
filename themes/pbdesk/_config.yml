@@ -36,24 +36,18 @@ google_analytics:
 
 # Social Media Platforms
 social_platforms:
-  - url: https://twitter.com/?lang=en
+  - url: https://www.twitter.com/PBDesk
     fa_icon: fa-twitter
-  - url: https://www.facebook.com/
+  - url: https://www.facebook.com/Go.PBDesk/
     fa_icon: fa-facebook
-  - url: https://dribbble.com/
-    fa_icon: fa-dribbble 
-  - url: https://github.com/klugjo/hexo-theme-anodyne
+  - url: https://www.linkedin.com/in/pinalbhatt
+    fa_icon: fa-linkedin
+  - url: https://github.com/pinalbhatt/
     fa_icon: fa-github
   - url: https://plus.google.com/
     fa_icon: fa-google-plus
-  - url: https://www.behance.net/
-    fa_icon: fa-behance
-  - url: https://500px.com/
-    fa_icon: fa-500px
-  - url: mailto:test@example.com
-    fa_icon: fa-envelope
   - url: /#
     fa_icon: fa-rss
 
 # Footer about
-footer_about: "@Untitled. All right reserved | Design & Hexo <a class=\"link dim white\" href=\"http://www.codeblocq.com/\">Jonathan Klughertz</a>"
+footer_about: "Learning endeavor forever… from the desk of Pinal Bhatt <br/><br/> <a href='http://www.pbdesk.com'>PBDesk.com - Pinal Bhatt&quot;s Blog</a> © 2017. All Rights Reserved"
