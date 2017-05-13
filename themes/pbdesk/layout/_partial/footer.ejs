@@ -1,15 +1,31 @@
-<div class="bg-1 ph2 ph5-ns pv5">
+<div class="bg-1 ph2 ph5-ns pv4">
         <div class="mv8">
+            <div class="center tc pb5">
+                <div class="dib mh3">
+                    <a class="f5 f5-ns white dim" href="/" target="_blank" style="text-decoration: none!important;">
+                        <i class="fa fa-home"></i> Home
+                    </a> &nbsp;&nbsp;&nbsp;
+                    <a class="f5 f5-ns white dim" href="/categories" target="_blank" style="text-decoration: none!important;">
+                        <i class="fa fa-user"></i> Categories
+                    </a> &nbsp;&nbsp;&nbsp;
+                    <a class="f5 f5-ns white dim" href="/about" target="_blank" style="text-decoration: none!important;">
+                        <i class="fa fa-user"></i> About
+                    </a> &nbsp;&nbsp;&nbsp;
+                    <a class="f5 f5-ns white dim" href="/disclaimer" target="_blank" style="text-decoration: none!important;">
+                        <i class="fa fa-info"></i> Disclaimer
+                    </a>
+                </div>
+            </div>
             <div class="center tc">
                 <% theme.social_platforms.forEach(function(platform) { %>
                     <div class="dib mh3">
-                        <a class="f3 f2-ns white dim" href="<%- platform.url %>" target="_blank">
+                        <a class="f3 f3-ns white dim" href="<%- platform.url %>" target="_blank">
                             <i class="fa <%- platform.fa_icon %>"></i>
                         </a>
                     </div>
                 <% }) %>
             </div>
-            <div class="f6 f5-ns center tc white pt5 fw3">
+            <div class="f6 f5-ns center tc white pt4 fw3">
                 <%- theme.footer_about %>
             </div>
         </div>

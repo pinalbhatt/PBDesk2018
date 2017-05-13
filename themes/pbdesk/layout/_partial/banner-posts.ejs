@@ -19,13 +19,24 @@
     <!-- Title -->
     <div class="w-100 mw8 center vh-32 dt">
         <div class="dtc v-mid white">
+            <% page.categories.forEach(function(category) { %>
+            <p class="f4 fw3 tc tc-m tl-ns subtitle"> <i class="fa fa-calendar"></i> <%- secondaryText %>
+                &nbsp;&nbsp;&nbsp;
+                <i class="fa fa-folder-o"></i>  <a class="f5 f5-ns white dim b subtitle_a" href="<%- config.root + category.path %>"><%= category.name %></a>
+            </p>
+            <% }) %>
             <h1 class="f1-l f2-m tc tc-m tl-ns title"><%- mainText %></h1>
-            <p class="f4 fw3 pab-100px tc tc-m tl-ns subtitle"><%- secondaryText %></p>
+            <p class="f4 fw3 pab-100px tc tc-m tl-ns subtitle"> <i class="fa fa-tags"></i>
+            <% page.tags.forEach(function(tag) { %>
+                  #<a class="f5 f5-ns white dim subtitle_a" href="<%- config.root + tag.path %>"><%= tag.name %></a>
+            <% }) %>
+            </p>
+
         </div>
     </div>
 
     <!-- Icon -->
-    <div class="relative w-100 mw8 center white dn dn-m db-ns" style="margin-top: -40px">
+    <div class="relative w-100 mw8 center white dn dn-m db-ns" style="margin-top: -30px">
         <i class="header-icon fa <%- faIconCss %>"></i>
     </div>
 </div>
