@@ -1,18 +1,16 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
+
 
 # Site
 title: Pinal Bhatt's Blog
 subtitle: Learning Endeavour forerver....
-description:
-author: Pinal Bhatt
-language:
-timezone:
+description: Pinal Bhatt's Blog
+author: blog.PBDesk.com | Pinal Bhatt's Blog - Learning Endeavour forerver....
+language: en
+timezone: America/New_York
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://blog.pbdesk.com
 root: /
 permalink: :category/:title/
 permalink_defaults:
@@ -44,7 +42,7 @@ highlight:
   tab_replace:
 
 # Category & Tag
-default_category: uncategorized
+default_category: General
 category_map:
 tag_map:
 
@@ -52,7 +50,7 @@ tag_map:
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
 ## http://momentjs.com/docs/#/displaying/format/
-date_format: DD-MMM-YYYY
+date_format: MMM-YYYY
 time_format: HH:mm:ss
 
 # Pagination
