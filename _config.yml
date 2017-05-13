@@ -78,3 +78,49 @@ jsonFeed:
 
 sitemap:
     path: sitemap.xml
+
+hfc_useref:
+  enable: false
+hfc_html:
+  enable: true
+hfc_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+hfc_js:
+  enable: true
+  mangle: true
+  output:
+  compress: true
+  exclude:
+    - '*.min.js'
+hfc_img:
+  enable: true
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
+  webp: true
+  webpQuality: 75
+  gifslice: true
+  jpegtran: true
+  jpegrecompress: false
+  jpegrecompressQuality: 'medium'
+  optipng: true
+  svgo: true
+
+hfc_favicons:
+  enable: true
+  src: /assets/images/PBDesk.png
+  target: /assets/images/
+  icons:
+    android: true
+    appleIcon: true
+    appleStartup: true
+    coast: true
+    favicons: true
+    firefox: true
+    opengraph: true
+    windows: true
+    yandex: true
