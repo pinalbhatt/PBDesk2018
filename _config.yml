@@ -67,3 +67,14 @@ theme: pbdesk
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+feed:
+  type: atom
+  path: feed.xml
+  limit: 20
+
+jsonFeed:
+  limit: 25
+
+sitemap:
+    path: sitemap.xml
