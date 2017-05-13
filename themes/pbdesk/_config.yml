@@ -1,5 +1,6 @@
 # Logo
-logo_image_source: http://www.pbdesk.com/content/images/2017/03/PBDesk2017Logo.png
+logo_image_source: /assets/images/PBDesk2017Logo.png
+favicon: /assets/images/PBDeskFavicon.png
 
 # Index Page
 index_banner_text: Pinal Bhatt's Blog

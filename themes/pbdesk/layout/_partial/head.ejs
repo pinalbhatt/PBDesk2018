@@ -71,6 +71,9 @@
     %>
     <title><%= title.join(' - ') %></title>
 
+    <% if (theme.favicon){ %>
+    <link rel="icon" href="<%- theme.favicon %>">
+    <% } %>
     <!-- Tachyons Core CSS -->
     <link rel="stylesheet" href="//unpkg.com/tachyons/css/tachyons.min.css">
 
