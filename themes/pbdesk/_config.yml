@@ -9,9 +9,11 @@ index_font_awesome_icon_css: fa fa-magic
 
 # Header
 menu:
+  Home: /
   Posts: /archives
   Categories: /categories
   Tags: /tags
+  About: /about
 
 
 # Post
@@ -33,7 +35,7 @@ comments:
   disqus_shortname: 
 
 # Google Analytics Tracking ID
-google_analytics: UA-9753249-18
+google_analytics: UA-9753249-7
 
 # Social Media Platforms
 social_platforms:
@@ -47,7 +49,7 @@ social_platforms:
     fa_icon: fa-github
   - url: https://plus.google.com/
     fa_icon: fa-google-plus
-  - url: /#
+  - url: http://blog.pbdesk.com/feed.xml
     fa_icon: fa-rss
 
 # Footer about

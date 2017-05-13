@@ -66,7 +66,9 @@ theme: pbdesk
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: s3
+  bucket: blog.pbdesk.com
+
 
 feed:
   type: atom
@@ -82,20 +84,20 @@ sitemap:
 hfc_useref:
   enable: false
 hfc_html:
-  enable: true
+  enable: false
 hfc_css:
-  enable: true
+  enable: false
   exclude:
     - '*.min.css'
 hfc_js:
-  enable: true
+  enable: false
   mangle: true
   output:
   compress: true
   exclude:
     - '*.min.js'
 hfc_img:
-  enable: true
+  enable: false
   interlaced: false
   multipass: false
   optimizationLevel: 2
@@ -111,7 +113,7 @@ hfc_img:
   svgo: true
 
 hfc_favicons:
-  enable: true
+  enable: false
   src: /assets/images/PBDesk.png
   target: /assets/images/
   icons:

@@ -1,5 +1,7 @@
 <%
     var title = '';
+    var icon = theme.archive_font_awesome_icon_css;
+    var subTitle = 'all posts';
     if (page.archive) {
         if (page.year) title = page.year + (page.month ? '/' + page.month : '');
         else title = __('archive_a');
@@ -13,6 +15,8 @@
             }
         });
         title = page.category;
+        icon = 'fa-folder-o';
+        subTitle = 'posts by category';
     }
     else if (page.tag) {
         site.tags.forEach(function(item) {
@@ -20,17 +24,19 @@
                 postList = item.posts;
             }
         });
-        title = "# " + page.tag;
+        title = "#" + page.tag;
+        icon = 'fa-tag'
+        subTitle = 'posts by tag'
     } else {
         postList = site.posts;
     }
 %>
 
 <!-- Banner -->
-<%- partial('_partial/banner.ejs', {
+<%- partial('_partial/banner-page.ejs', {
     mainText: title,
-    secondaryText: '',
-    faIconCss: theme.archive_font_awesome_icon_css
+    secondaryText: subTitle || '',
+    faIconCss: icon || theme.archive_font_awesome_icon_css
 }) %>
 
 <div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
