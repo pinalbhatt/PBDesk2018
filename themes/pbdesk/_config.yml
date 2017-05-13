@@ -23,8 +23,8 @@ archive_date_format: MMM-YYYY
 archive_font_awesome_icon_css: fa-folder-open
 
 # About Widget
-about_widget_avatar_url: http://tachyons.io/img/avatar_1.jpg
-about_widget_text: "My name is Jonathan Klughertz and this is my blog.<br>I am a full stack software engineer with a strong front-end focus.<br> I currently live and work in Singapore, hit me up if you are in the region."
+about_widget_avatar_url: /assets/images/PBDesk.png
+about_widget_text: "<i><b>Learning Endeavour forerver...</b></i> <br/>I am Software Engineer and this is my blog.<br> hit me <a target='_blank' href='https://twitter.com/pbdesk'> @PBDesk <i class='fa fa-twitter'></i></a>."
 
 
 # Comments.
