@@ -1,12 +1,12 @@
 <!-- Banner -->
-<%- partial('_partial/banner.ejs', {
+<%- partial('_partial/banner-page.ejs', {
     mainText: page.title || theme.default_post_title || __('default_post_title'),
-    secondaryText: '',
+    secondaryText: page.subtitle || '',
     faIconCss: page.icon || theme.default_post_icon || ''
 }) %>
 
 <!-- Content -->
-<div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
+<div class="w-100 ph2 ph4-m ph5-l mv4 mv5-l">
     <div class="content">
         <div class="mw8 center">
                 <div class="w-100 mw7 fw3 lh-copy post-content">
