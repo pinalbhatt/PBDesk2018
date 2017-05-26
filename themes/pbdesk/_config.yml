@@ -32,7 +32,7 @@ about_widget_text: "<i><b>Learning Endeavour forerver...</b></i> <br/>I am Softw
 # Comments.
 comments:
   # Disqus comments
-  disqus_shortname: 
+  disqus_shortname: pbdesk-com
 
 # Google Analytics Tracking ID
 google_analytics: UA-9753249-7

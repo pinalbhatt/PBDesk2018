@@ -1,8 +1,8 @@
 ---
 title: Moving my blog to Jekyll!
 date: 2015-04-20 09:35:09
-tags: [ Blogging, CMS ]
-categories: ["General"]
+tags: [ CMS, Jekyll ]
+categories: ["Blogging"]
 ---
 Yes I am moving my blog(blog.PBDesk.com) from WordPress to Jekyll and host it at Github pages.
 
