@@ -4,6 +4,7 @@ tags: [AngularJS, Javascript]
 categories:
   - Tutorials
 date: 2014-09-08  16:39:35
+featured: true
 ---
 <p>&nbsp;</p>
 <blockquote>

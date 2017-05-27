@@ -1,0 +1,15 @@
+.ms-title,
+.ms-header .ms-title h1 {
+  word-spacing: 0;
+}
+.blk-shadow {
+  text-shadow:  #000000 2px 2px 2px
+}
+
+.ms-site-subtitle {
+  font-weight: 400;
+  font-size: 22px;
+}
+.style-line b {
+  font-weight: 400;
+}

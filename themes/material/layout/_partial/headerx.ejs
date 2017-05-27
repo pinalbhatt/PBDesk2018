@@ -1,12 +1,15 @@
 <nav class="navbar navbar-static-top yamm ms-navbar ms-navbar-primary">
     <div class="container container-full">
         <div class="navbar-header">
-            <a class="navbar-brand" href="index.html">
-                <!-- <img src="assets/img/demo/logo-navbar.png" alt=""> -->
-                <span class="ms-logo ms-logo-sm">M</span>
-                <span class="ms-title">Materialx
-                <strong>Style</strong>
-              </span>
+            <a class="navbar-brand" href="<%- config.root %>" title="<%- config.title %>">
+                <img
+                        src="<%- theme.logo_image_source %>"
+                        alt="<%- config.title %>"
+                        class="animated zoomInDown animation-delay-5 img-responsive"
+                        style="max-height: 40px; display: inline">
+                <!--<span class="ms-title">from the desk of
+                    <strong>Pinal Bhatt</strong>
+                </span>-->
             </a>
         </div>
         <%- partial('_partial/main-menu.ejs') %>
