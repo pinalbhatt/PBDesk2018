@@ -13,3 +13,10 @@
 .style-line b {
   font-weight: 400;
 }
+
+.pager li a {
+  font-size: 20px;
+  height: 75px;
+  padding-top: 25px;
+  width: 175px;
+}

@@ -1,24 +1,43 @@
-<a href="<%- url_for(item.path) %>">
-    <div class="dt w-100 hover-border-main-color pointer pa3 border-color bl mv4">
-        <div class="dtc v-mid w-90 black-70">
-            <div>
-                <% if(item.date) { %>
-                    <span class="f5 fw3 lh-copy pr4"><%= item.date.format(config.date_format) %></span> 
-                <% } %>
-                <% if (item.tags && item.tags.length) {
-                    var tags = [];
-                    item.tags.forEach(function(tag) {
-                        <!-- Need to use JS to handle link click to avoid display issues. Best to put here than outer div for SEO. -->
-                        tags.push('<span class="fake-link fw3 ph1 dib" onclick="location.href = \'' + config.root + tag.path + '\'; return false;">#' + tag.name + '</span>');
-                    });
-                %>
-                <%- tags.join(' ') %>
-                <% } %>
+<div class="col-sm-6 masonry-item wow fadeInUp animation-delay-2">
+    <article class="card card-primary mb-4 wow materialUp animation-delay-5">
+        <figure class="ms-thumbnail ms-thumbnail-left">
+            <img src="<%- item.image || theme.default_post_image %>" alt="<%- item.title || theme.default_post_title || __('default_post_title') %>" class="img-responsive">
+            <figcaption class="ms-thumbnail-caption text-center">
+                <div class="ms-thumbnail-caption-content">
+                    <h3 class="ms-thumbnail-caption-title"><%- item.title || theme.default_post_title || __('default_post_title') %></h3>
+                    <!--<div class="mt-2">
+                        <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-circle-sm mr-1 btn-circle-white color-danger">
+                            <i class="zmdi zmdi-favorite"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-circle-sm ml-1 mr-1 btn-circle-white color-warning">
+                            <i class="zmdi zmdi-star"></i>
+                        </a>
+                        <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-circle-sm ml-1 btn-circle-white color-success">
+                            <i class="zmdi zmdi-share"></i>
+                        </a>
+                    </div>-->
+                </div>
+            </figcaption>
+        </figure>
+        <div class="card-block">
+            <h2>
+                <a href="<%- url_for(item.path) %>"><%- item.title || theme.default_post_title || __('default_post_title') %></a>
+            </h2>
+            <%= strip_html(item.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 350) %>
+            <p></p>
+
+            <div class="row">
+                <div class="col-lg-6 col-md-4">
+                    <div class="mt-05">
+                        <a href="javascript:void(0)" class="ms-tag ms-tag-info">Design</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-8">
+                    <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block animate-icon">Read more
+                        <i class="ml-1 no-mr zmdi zmdi-long-arrow-right"></i>
+                    </a>
+                </div>
             </div>
-            <span class="f3 fw3 lh-copy"><%- item.title || theme.default_post_title || __('default_post_title') %><span>
         </div>
-        <div class="dtc v-mid w-10 f1 black-50 tr">
-            <i class="fa <%- item.icon || theme.default_post_icon %>"></i>
-        </div>
-    </div>
-</a>
+    </article>
+</div>
