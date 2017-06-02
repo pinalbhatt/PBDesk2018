@@ -19,7 +19,7 @@ menu:
 # Post
 default_post_title: Untitled
 default_post_icon: fa-file-text-o
-default_post_image: /assets/images/1.png
+default_post_image: /assets/images/default_post.jpg
 
 # Archive Date Format
 archive_date_format: MMM-YYYY

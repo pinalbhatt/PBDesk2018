@@ -36,22 +36,27 @@ menu1: posts
     }
 %>
 
-<!-- Banner -->
-<%- partial('_partial/banner-page.ejs', {
-    mainText: title,
-    secondaryText: subTitle || '',
-    faIconCss: icon || theme.archive_font_awesome_icon_css
-}) %>
+<div class="material-background"></div>
+<div class="container">
+    <div class="card wow slideInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card-block-big">
+                        <h1 class="color-primary">Post Archives</h1>
+                    </div>
+                    <ul class="ms-timeline">
+                        <% postList.each(function(item){ %>
+                        <%- partial('_partial/article-archive', {item: item}) %>
+                        <% }); %>
+                    </ul>
+                </div>
+                <div class="col-md-4">
 
-<div class="w-100 ph2 ph4-m ph5-l mv5 mv6-l">
-    <div class="content">
-        <div class="mw8 center">
-            <% postList.each(function(item){ %>
-                <%- partial('_partial/article-archive', {item: item}) %>
-            <% }); %>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<div class="mw8 center">
-    <%- partial('_partial/responsive-ad.ejs') %>
-</div>
+
+
