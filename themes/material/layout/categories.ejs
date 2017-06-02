@@ -1,0 +1,9 @@
+<%- list_categories() %>
+
+<% site.categories.forEach(function(cat) { %>
+<a href="<%- config.root + cat.path %>" class="list-group-item withripple">
+    <i class=" color-primary zmdi zmdi-folder"></i><%- cat.name %>
+    <span class="badge badge-primary"><%- cat.posts.length %></span>
+</a>
+
+<% })%>

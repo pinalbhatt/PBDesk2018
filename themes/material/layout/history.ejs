@@ -1,0 +1,182 @@
+
+
+<div class="material-background bg-primary-dark"></div>
+<div class="container">
+    <div class="card wow slideInUp">
+        <div class="card-block-big">
+            <h1 class="color-primary">PBDesk.com Archives</h1>
+            <p><b>History of my Blog and my Site</b></p>
+            <p>something to come</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <ul class="ms-timeline">
+
+                        <li class="ms-timeline-item wow materialUp">
+                            <div class="ms-timeline-date">
+                                <time class="timeline-time" datetime="">
+                                    <span>2017</span>
+                                </time>
+                                <i class="ms-timeline-point"></i>
+                            </div>
+                                <div class="card">
+                                    <div class="withripple zoom-img">
+                                        <div class="carousel ms-carousel slide card" data-ride="carousel" style="margin: 0">
+                                            <!-- Indicators -->
+                                            <ol class="carousel-indicators">
+                                                <% var idx = 0; for (var slide in site.data.A2017) { %>
+                                                <li data-target="#carousel-home-blog" data-slide-to="<%- idx %>" class="<%- idx==0?'active': '' %>"></li>
+                                                <% idx++; } %>
+                                            </ol>
+                                            <!-- Wrapper for slides -->
+                                            <div class="carousel-inner" role="listbox">
+                                                <% var idx = 0; for (var slide in site.data.A2017) { %>
+                                                <div class="item <%- idx==0?'active': '' %>">
+                                                    <img src="<%- site.data.A2017[slide].image %>" class="img-responsive" style="max-height: 375px;" alt="...">
+                                                </div>
+                                                <% idx++; } %>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-block text-center">
+                                        <h4 class="color-success">2017 PBDesk.com</h4>
+                                        <p>Build with Hexo.io</p>
+                                    </div>
+                                </div>
+                        </li>
+                        <li class="ms-timeline-item wow materialUp">
+                            <div class="ms-timeline-date">
+                                <time class="timeline-time" datetime="">
+                                    <span>2016</span>
+                                </time>
+                                <i class="ms-timeline-point"></i>
+                            </div>
+                            <div class="card">
+                                <div class="withripple zoom-img">
+                                    <div class="carousel ms-carousel slide card" data-ride="carousel" style="margin: 0">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <% var idx = 0; for (var slide in site.data.A2016) { %>
+                                            <li data-target="#carousel-home-blog" data-slide-to="<%- idx %>" class="<%- idx==0?'active': '' %>"></li>
+                                            <% idx++; } %>
+                                        </ol>
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <% var idx = 0; for (var slide in site.data.A2016) { %>
+                                            <div class="item <%- idx==0?'active': '' %>">
+                                                <img src="<%- site.data.A2016[slide].image %>" class="img-responsive" style="max-height: 375px;" alt="...">
+                                            </div>
+                                            <% idx++; } %>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-block text-center">
+                                    <h4 class="color-success">2016 PBDesk.com</h4>
+                                    <p>Build with Ghost and hosted on AWS EC2</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ms-timeline-item wow materialUp">
+                            <div class="ms-timeline-date">
+                                <time class="timeline-time" datetime="">
+                                    <span>2015</span>
+                                </time>
+                                <i class="ms-timeline-point"></i>
+                            </div>
+                            <div class="card">
+                                <div class="withripple zoom-img">
+                                    <div class="carousel ms-carousel slide card" data-ride="carousel" style="margin: 0">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <% var idx = 0; for (var slide in site.data.A2015) { %>
+                                            <li data-target="#carousel-home-blog" data-slide-to="<%- idx %>" class="<%- idx==0?'active': '' %>"></li>
+                                            <% idx++; } %>
+                                        </ol>
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <% var idx = 0; for (var slide in site.data.A2015) { %>
+                                            <div class="item <%- idx==0?'active': '' %>">
+                                                <img src="<%- site.data.A2015[slide].image %>" class="img-responsive" style="max-height: 375px;" alt="...">
+                                            </div>
+                                            <% idx++; } %>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-block text-center">
+                                    <h4 class="color-success">2015 PBDesk.com</h4>
+                                    <p>Build with Jekyll and hosted on Github.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ms-timeline-item wow materialUp">
+                            <div class="ms-timeline-date">
+                                <time class="timeline-time" datetime="">
+                                    <span>2014</span>
+                                </time>
+                                <i class="ms-timeline-point"></i>
+                            </div>
+                            <div class="card">
+                                <div class="withripple zoom-img">
+                                    <div class="carousel ms-carousel slide card" data-ride="carousel" style="margin: 0">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <% var idx = 0; for (var slide in site.data.A2014) { %>
+                                            <li data-target="#carousel-home-blog" data-slide-to="<%- idx %>" class="<%- idx==0?'active': '' %>"></li>
+                                            <% idx++; } %>
+                                        </ol>
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <% var idx = 0; for (var slide in site.data.A2014) { %>
+                                            <div class="item <%- idx==0?'active': '' %>">
+                                                <img src="<%- site.data.A2014[slide].image %>" class="img-responsive" style="max-height: 375px;" alt="...">
+                                            </div>
+                                            <% idx++; } %>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-block text-center">
+                                    <h4 class="color-success">2014 PBDesk.com</h4>
+                                    <p>Build with Umbraco</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="ms-timeline-item wow materialUp">
+                            <div class="ms-timeline-date">
+                                <time class="timeline-time" datetime="">
+                                    <span>2013</span>
+                                </time>
+                                <i class="ms-timeline-point"></i>
+                            </div>
+                            <div class="card">
+                                <div class="withripple zoom-img">
+                                    <div class="carousel ms-carousel slide card" data-ride="carousel" style="margin: 0">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <% var idx = 0; for (var slide in site.data.A2013) { %>
+                                            <li data-target="#carousel-home-blog" data-slide-to="<%- idx %>" class="<%- idx==0?'active': '' %>"></li>
+                                            <% idx++; } %>
+                                        </ol>
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner" role="listbox">
+                                            <% var idx = 0; for (var slide in site.data.A2013) { %>
+                                            <div class="item <%- idx==0?'active': '' %>">
+                                                <img src="<%- site.data.A2013[slide].image %>" class="img-responsive" style="max-height: 375px;" alt="...">
+                                            </div>
+                                            <% idx++; } %>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-block text-center">
+                                    <h4 class="color-success">2013 PBDesk.com</h4>
+                                    <p>Build with Umbraco.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
