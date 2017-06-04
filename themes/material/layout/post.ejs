@@ -3,10 +3,14 @@
     <div class="row">
         <div class="col-md-8">
             <div class="card animated fadeInLeftTiny animation-delay-5">
-                <div class="card-block card-block-big card-primary">
-                    <div class="mb-4">
+                <div>
+                    <img src="<%- page.image || theme.default_post_image %>" alt="" class="img-responsive mb-4">
+                </div>
+                <div class="card-block">
+
+                    <div class="mb-2">
                         <% page.categories.forEach(function(category) { %>
-                        <a href="<%- config.root + category.path %>" class="ms-tag ms-tag-info"><i class="fa fa-folder-o"></i> <%= category.name %></a>
+                        <a href="<%- config.root + category.path %>" class="ms-tag ms-tag-primary"><i class="fa fa-folder-o"></i> <%= category.name %></a>
                         <% }) %>
 
                         <span class="ml-1 hidden-xs">
@@ -17,12 +21,19 @@
                     <h1 class="no-mt"><%- page.title %></h1>
                     <div class="mb-2">
                         <% page.tags.forEach(function(tag) { %>
-                        <a href="<%- config.root + tag.path %>" class="ms-tag ms-tag-info"><i class="fa fa-tag"></i> <%= tag.name %></a>
+                        <a href="<%- config.root + tag.path %>" class="label label-primary"><i class="fa fa-tag"></i> <%= tag.name %></a>
                         <% }) %>
+                        <div class="btn-group btn-group-justified btn-group-raised">
+                            <a target="_blank" href="<%- twitter_share_link(page) %>" class="btn btn-raised btn-twitter "><i class="zmdi zmdi-twitter"></i> Tweet</a>
+                            <a target="_blank" href="<%- twitter_share_link(page) %>" class="btn btn-raised btn-linkedin "><i class="zmdi zmdi-linkedin"></i> LinkedIN</a>
+                            <a target="_blank" href="<%- twitter_share_link(page) %>" class="btn btn-raised btn-facebook "><i class="zmdi zmdi-facebook"></i> Share</a>
+                            <a target="_blank" href="<%- twitter_share_link(page) %>" class="btn btn-raised btn-google "><i class="zmdi zmdi-google-plus"></i> Google+</a>
+                        </div>
+
                     </div>
                 </div>
+
                 <div class="card card-block card-primary">
-                    <img src="assets/img/demo/post4.jpg" alt="" class="img-responsive mb-4">
                     <%- page.content %>
                 </div>
                 <div class="row text-center">

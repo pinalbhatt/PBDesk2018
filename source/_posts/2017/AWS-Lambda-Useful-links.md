@@ -2,7 +2,7 @@
 title: AWS Lambda - Useful links
 tags: [ Serverless, LambdaFunctions]
 categories:
-  - Cloud
+  - Cloud-Computing
 date: 2017-05-18 20:54:54
 youtube_id: eOBq__h4OJ4
 menu: test

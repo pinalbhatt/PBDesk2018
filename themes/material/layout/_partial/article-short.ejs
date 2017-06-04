@@ -5,17 +5,14 @@
             <figcaption class="ms-thumbnail-caption text-center">
                 <div class="ms-thumbnail-caption-content">
                     <h3 class="ms-thumbnail-caption-title"><%- item.title || theme.default_post_title || __('default_post_title') %></h3>
-                    <!--<div class="mt-2">
-                        <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-circle-sm mr-1 btn-circle-white color-danger">
-                            <i class="zmdi zmdi-favorite"></i>
+                    <div class="mt-2">
+                        <a target="_blank" href="<%- twitter_share_link(item) %>" class="btn-circle btn-circle-raised btn-circle-sm ml-1 mr-1 btn-circle-white color-warning">
+                            <i class="zmdi zmdi-twitter"></i>
                         </a>
-                        <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-circle-sm ml-1 mr-1 btn-circle-white color-warning">
-                            <i class="zmdi zmdi-star"></i>
+                        <a href="<%- url_for(item.path) %>" class="btn-circle btn-circle-raised btn-circle-sm ml-1 btn-circle-white color-success">
+                            <i class="zmdi zmdi-link"></i>
                         </a>
-                        <a href="javascript:void(0)" class="btn-circle btn-circle-raised btn-circle-sm ml-1 btn-circle-white color-success">
-                            <i class="zmdi zmdi-share"></i>
-                        </a>
-                    </div>-->
+                    </div>
                 </div>
             </figcaption>
         </figure>
@@ -23,17 +20,19 @@
             <h2>
                 <a href="<%- url_for(item.path) %>"><%- item.title || theme.default_post_title || __('default_post_title') %></a>
             </h2>
-            <%= strip_html(item.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 350) %>
+            <%= strip_html(item.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 300) %>
             <p></p>
 
             <div class="row">
                 <div class="col-lg-6 col-md-4">
                     <div class="mt-05">
-                        <a href="javascript:void(0)" class="ms-tag ms-tag-info">Design</a>
+                        <% item.categories.forEach(function(category) { %>
+                        <a href="<%- config.root + category.path %>" class="ms-tag ms-tag-primary"><i class="fa fa-folder-o"></i> <%= category.name %></a>
+                        <% }) %>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-8">
-                    <a href="javascript:void(0)" class="btn btn-primary btn-sm btn-block animate-icon">Read more
+                    <a href="<%- url_for(item.path) %>" class="btn btn-primary btn-sm btn-block animate-icon">Read more
                         <i class="ml-1 no-mr zmdi zmdi-long-arrow-right"></i>
                     </a>
                 </div>
@@ -41,3 +40,4 @@
         </div>
     </article>
 </div>
+
