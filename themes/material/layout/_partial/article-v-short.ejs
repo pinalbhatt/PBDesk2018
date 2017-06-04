@@ -1,0 +1,22 @@
+<div class="media">
+    <div class="media-left media-middle">
+        <a href="#">
+            <img class="media-object media-object-circle" src="<%- post.image || theme.default_post_image %>" alt="<%- post.title %>"> </a>
+    </div>
+    <div class="media-body">
+        <a href="<%- url_for(post.path) %>" class="media-heading"><%- post.title %></a>
+        <div class="media-footer text-small">
+                            <span class="mr-1">
+                              <i class="fa fa-calendar"></i> <%- post.date.format(config.date_format) %>
+                            </span>
+            <% post.categories.forEach(function(category) { %>
+            <span>
+                                    <i class="zmdi zmdi-folder-outline color-warning-light"></i>
+                                    <a href="<%- config.root + category.path %>"> <%= category.name %></a>
+                                </span>
+            <% }) %>
+            <span>
+                            </span>
+        </div>
+    </div>
+</div>
