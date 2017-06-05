@@ -88,20 +88,20 @@ sitemap:
 hfc_useref:
   enable: false
 hfc_html:
-  enable: false
+  enable: true
 hfc_css:
-  enable: false
+  enable: true
   exclude:
     - '*.min.css'
 hfc_js:
-  enable: false
+  enable: true
   mangle: true
   output:
   compress: true
   exclude:
     - '*.min.js'
 hfc_img:
-  enable: false
+  enable: true
   interlaced: false
   multipass: false
   optimizationLevel: 2
@@ -117,7 +117,7 @@ hfc_img:
   svgo: true
 
 hfc_favicons:
-  enable: false
+  enable: true
   src: /assets/images/PBDesk.png
   target: /assets/images/
   icons:

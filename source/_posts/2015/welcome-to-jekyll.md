@@ -4,7 +4,7 @@ date: 2015-04-18 13:12:35
 tags: [CMS, Jekyll]
 categories:
   - Blogging
-
+image: /assets/images/2015/logo-jekyll.png
 ---
 This was the default post created when I created Jekyll project. Keeping this post as is to show my liking for Jekyll.
 

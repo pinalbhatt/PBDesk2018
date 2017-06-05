@@ -4,6 +4,7 @@ tags: [NodeJS, Javascript]
 categories:
   - Tutorials
 date:  2014-08-24 13:53:56
+image: /assets/images/2014/Mocha-Logo-720x340.png
 ---
 <p>My google research for "node js mocha tutorial"</p>
 <h2>1. <a href="http://visionmedia.github.io/mocha/" target="_blank">Official web site for Mocha</a></h2>
@@ -19,3 +20,4 @@ date:  2014-08-24 13:53:56
 <p>By: <a title="Nelson" href="https://github.com/nelsonic" target="_blank">Nelson</a></p>
 <p><em>Quick Guide</em> to <strong>mocha.js</strong> Test Driven Development (TDD) / Behaviour Driven Development (BDD) in <strong>node.js</strong></p>
 <p>&nbsp;</p>
+
