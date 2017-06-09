@@ -9,11 +9,12 @@ language: en
 timezone: America/New_York
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://pbdesk.com
 root: /
 permalink: :category/:title/
 permalink_defaults:
+
+
 
 # Directory
 source_dir: source
@@ -26,7 +27,7 @@ i18n_dir: :lang
 skip_render:
 
 # Writing
-new_post_name: :title.md # File name of new posts
+new_post_name: :year-:month-:day-:title.md # File name of new posts
 default_layout: post
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
@@ -86,46 +87,89 @@ sitemap:
 
 hfc_useref:
   enable: false
-hfc_html:
-  enable: false
-hfc_css:
-  enable: false
-  exclude:
-    - '*.min.css'
-hfc_js:
-  enable: false
-  mangle: true
-  output:
-  compress: true
-  exclude:
-    - '*.min.js'
-hfc_img:
-  enable: false
-  interlaced: false
-  multipass: false
-  optimizationLevel: 2
-  pngquant: false
-  progressive: false
-  webp: true
-  webpQuality: 75
-  gifslice: true
-  jpegtran: true
-  jpegrecompress: false
-  jpegrecompressQuality: 'medium'
-  optipng: true
-  svgo: true
 
-hfc_favicons:
-  enable: false
-  src: /assets/images/PBDesk.png
-  target: /assets/images/
-  icons:
-    android: true
-    appleIcon: true
-    appleStartup: true
-    coast: true
-    favicons: true
-    firefox: true
-    opengraph: true
-    windows: true
-    yandex: true
+
+stagings:
+  prod:
+    url: http://pbdesk.com
+    hfc_html:
+      enable: true
+    hfc_css:
+      enable: true
+      exclude:
+        - '*.min.css'
+    hfc_js:
+      enable: true
+      mangle: true
+      output:
+      compress: true
+      exclude:
+        - '*.min.js'
+    hfc_img:
+      enable: true
+      interlaced: false
+      multipass: false
+      optimizationLevel: 2
+      pngquant: false
+      progressive: false
+      webp: true
+      webpQuality: 75
+      gifslice: true
+      jpegtran: true
+      jpegrecompress: false
+      jpegrecompressQuality: 'medium'
+      optipng: true
+      svgo: true
+    hfc_favicons:
+      enable: true
+      src: /assets/images/PBDesk.png
+      target: /assets/images/
+      icons:
+        android: true
+        appleIcon: true
+        appleStartup: true
+        coast: true
+        favicons: true
+        firefox: true
+        opengraph: true
+        windows: true
+        yandex: true
+  dev:
+    url: http://dev.pbdesk.com:4200
+    hfc_html:
+      enable: false
+    hfc_css:
+      enable: false
+      exclude:
+        - '*.min.css'
+    hfc_js:
+      enable: false
+      mangle: true
+      output:
+      compress: true
+      exclude:
+        - '*.min.js'
+    hfc_favicons:
+      enable: false
+      src: /assets/images/PBDesk.png
+      target: /assets/images/
+      icons:
+        android: true
+        appleIcon: true
+        appleStartup: true
+        favicons: true
+    hfc_img:
+      enable: false
+      interlaced: false
+      multipass: false
+      optimizationLevel: 2
+      pngquant: false
+      progressive: false
+      webp: true
+      webpQuality: 75
+      gifslice: true
+      jpegtran: true
+      jpegrecompress: false
+      jpegrecompressQuality: 'medium'
+      optipng: true
+      svgo: true

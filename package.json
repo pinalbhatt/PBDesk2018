@@ -2,6 +2,9 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "start": "hexo clean && hexo server -p 4200 --staging dev"
+  },
   "hexo": {
     "version": "3.3.7"
   },
@@ -20,6 +23,7 @@
     "hexo-renderer-marked": "^0.3.0",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.2.1",
+    "hexo-staging": "^0.1.0",
     "hexo-tag-twitter": "^1.0.0"
   }
 }

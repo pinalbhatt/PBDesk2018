@@ -2,10 +2,10 @@
 title: 'New Paradigms: Serverless'
 tags: [AWS, Serverless]
 categories:
-  - Cloud-Computing
-date: 2017-05-18 20:53:01
+  - Cloud
+date: 2017-05-18
 featured: true
-image: /assets/images/2017/New-Paradigms-Serverless.png
+image: New-Paradigms-Serverless.png
 ---
 Around six months back I came across concept of “Serverless” and since very that day it has fascinated me. My instincts have been sighting this this is future of “Software Engineering” and “App Development". And yes its a talk of the town today! It has already become hot topic in the software architecture world. Already there are many books, meetups & conferences about this subject. 
 
