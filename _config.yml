@@ -87,6 +87,13 @@ sitemap:
 
 hfc_useref:
   enable: false
+hfc_js:
+      enable: false
+      mangle: true
+      output:
+      compress: true
+      exclude:
+        - '*.min.js'
 
 
 stagings:
@@ -98,28 +105,6 @@ stagings:
       enable: true
       exclude:
         - '*.min.css'
-    hfc_js:
-      enable: false
-      mangle: true
-      output:
-      compress: true
-      exclude:
-        - '*.min.js'
-    hfc_img:
-      enable: true
-      interlaced: false
-      multipass: false
-      optimizationLevel: 2
-      pngquant: false
-      progressive: false
-      webp: true
-      webpQuality: 75
-      gifslice: true
-      jpegtran: true
-      jpegrecompress: false
-      jpegrecompressQuality: 'medium'
-      optipng: true
-      svgo: true
     hfc_favicons:
       enable: true
       src: /assets/images/PBDesk.png
@@ -142,13 +127,6 @@ stagings:
       enable: false
       exclude:
         - '*.min.css'
-    hfc_js:
-      enable: false
-      mangle: true
-      output:
-      compress: true
-      exclude:
-        - '*.min.js'
     hfc_favicons:
       enable: false
       src: /assets/images/PBDesk.png
@@ -158,18 +136,4 @@ stagings:
         appleIcon: true
         appleStartup: true
         favicons: true
-    hfc_img:
-      enable: false
-      interlaced: false
-      multipass: false
-      optimizationLevel: 2
-      pngquant: false
-      progressive: false
-      webp: true
-      webpQuality: 75
-      gifslice: true
-      jpegtran: true
-      jpegrecompress: false
-      jpegrecompressQuality: 'medium'
-      optipng: true
-      svgo: true
+
