@@ -34,3 +34,13 @@ hexo.extend.helper.register('linkedin_share_link', function(item){
   const d = getShareData(item);
   return `https://www.linkedin.com/shareArticle?url=${d.url}&title=${d.title}`;
 });
+
+hexo.extend.helper.register('post_img', function(item){
+  const d = getShareData(item);
+  return item.image ? `${item.permalink}${item.image}` : '/assets/images/default_post.png'
+});
+
+/*
+item.image ? `${item.permalink}${item.image}` : theme.default_post_image
+
+    */

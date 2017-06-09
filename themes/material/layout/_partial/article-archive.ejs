@@ -9,11 +9,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <a href="<%- url_for(item.path) %>">
-                <% if (item.image){ %>
-                <img src="<%- item.image %>" alt="" class="img-responsive">
-                <% } else { %>
-                <img src="<%- theme.default_post_image %>" alt="" class="img-responsive">
-                <% } %>
+                    <img src="<%- post_img(item)  %>" alt="" class="img-responsive">
                 </a>
             </div>
             <div class="col-lg-6">

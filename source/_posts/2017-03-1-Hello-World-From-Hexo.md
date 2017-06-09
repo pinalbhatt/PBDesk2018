@@ -1,9 +1,10 @@
 ---
 title: Hello World From Hexo!
-tags: [Hexo, CMS]
-categories: [Blogging]
+tags: [Hexo, CMS, MyBlog, MyProj]
+categories:
+  - Blogging
 date: 2017-03-1
-image: /assets/images/2017/Hexo.png
+image: Hexo.png
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 

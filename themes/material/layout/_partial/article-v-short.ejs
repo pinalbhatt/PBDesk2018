@@ -1,7 +1,7 @@
 <div class="media">
     <div class="media-left media-middle">
         <a href="#">
-            <img class="media-object media-object-circle" src="<%- post.image ? `${post.permalink}${post.image}` : theme.default_post_image %>" alt="<%- post.title %>"> </a>
+            <img class="media-object media-object-circle" src="<%- post_img(post) %>" alt="<%- post.title %>"> </a>
     </div>
     <div class="media-body">
         <a href="<%- url_for(post.path) %>" class="media-heading"><%- post.title %></a>

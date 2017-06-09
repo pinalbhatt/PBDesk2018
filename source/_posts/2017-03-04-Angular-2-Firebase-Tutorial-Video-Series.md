@@ -1,9 +1,10 @@
 ---
 title: 'Angular 2 & Firebase Tutorial [Video Series]'
-date: 2017-03-04
 tags: [ Angular, Firebase, Javascript, VideoSeries ]
-categories: [Tutorials]
-image: /assets/images/2017/Angular-Firebase-Tutorial.png
+categories:
+  - Tutorials
+date: 2017-03-04
+image: Angular-Firebase-Tutorial.png
 ---
 Angular is awesome and Firebase if impressive.
 

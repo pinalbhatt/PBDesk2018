@@ -1,7 +1,7 @@
 <div class="col-sm-6 masonry-item wow fadeInUp animation-delay-2">
     <article class="card card-primary mb-4 wow materialUp animation-delay-5">
         <figure class="ms-thumbnail ms-thumbnail-left">
-            <img src="<%- item.image ? `${item.permalink}${item.image}` : theme.default_post_image %>" alt="<%- item.title || theme.default_post_title || __('default_post_title') %>" class="img-responsive">
+            <img src="<%- post_img(item) %>" alt="<%- item.title || theme.default_post_title || __('default_post_title') %>" class="img-responsive">
             <figcaption class="ms-thumbnail-caption text-center">
                 <div class="ms-thumbnail-caption-content">
                     <h3 class="ms-thumbnail-caption-title"><%- item.title || theme.default_post_title || __('default_post_title') %></h3>
