@@ -62,7 +62,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: material
-themeSkin: brown-500
+themeSkin: orange-600
 
 category_generator:
   per_page: 10
@@ -71,8 +71,7 @@ category_generator:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: s3
-  bucket: blog.pbdesk.com
-
+  bucket: pbdesk.com
 
 feed:
   type: atom
