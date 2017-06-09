@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "hexo clean && hexo server -p 4200 --staging dev"
+    "start": "hexo clean && hexo server -p 4200 --staging dev",
+    "prodg": "hexo clean && hexo g --staging prod",
+    "deploy": "hexo deploy --staging prod"
   },
   "hexo": {
     "version": "3.3.7"

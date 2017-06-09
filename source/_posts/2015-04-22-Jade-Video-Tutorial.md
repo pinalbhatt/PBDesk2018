@@ -3,8 +3,8 @@ title: Jade Video Tutorial
 tags: [NodeJS]
 categories:
   - Tutorials
-date: 2015-04-22 13:09:47
-image:  /assets/images/2015/jade.jpeg
+date: 2015-04-22
+image:  jade.jpeg
 ---
 <p>
     Jade - Template Engine for NodeJS. Jade is a cool, elegant, high-performance (and probably the most used) templating

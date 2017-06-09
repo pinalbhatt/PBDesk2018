@@ -3,8 +3,8 @@ title: ASP.Net vNext MVC 6 Videos
 tags: [MVC6, WebAPI]
 categories:
   - ASP.Net
-date: 2014-11-11 13:17:15
-image: /assets/images/2014/vNext-720x340.png
+date: 2014-11-11
+image: vNext-720x340.png
 ---
 <p style="text-align: justify;">Recently, in Summer 2014, Microsoft announced the preview availability of its new <a href="http://www.asp.net/vnext" target="_blank">ASP.Net vNext</a>, that is MVC 6.</p>
 <blockquote>

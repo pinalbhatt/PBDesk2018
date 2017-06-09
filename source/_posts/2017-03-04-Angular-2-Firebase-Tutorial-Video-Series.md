@@ -5,6 +5,7 @@ categories:
   - Tutorials
 date: 2017-03-04
 image: Angular-Firebase-Tutorial.png
+featured: true
 ---
 Angular is awesome and Firebase if impressive.
 

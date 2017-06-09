@@ -99,7 +99,7 @@ stagings:
       exclude:
         - '*.min.css'
     hfc_js:
-      enable: true
+      enable: false
       mangle: true
       output:
       compress: true

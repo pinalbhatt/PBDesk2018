@@ -3,9 +3,8 @@ title: AngularJS - Tutorials & Resources for beginners
 tags: [AngularJS, Javascript]
 categories:
   - Tutorials
-date: 2014-09-08  16:39:35
-featured: true
-image: /assets/images/2014/AngularJS.jpg
+date: 2014-09-08
+image: AngularJS.jpg
 ---
 <p>&nbsp;</p>
 <blockquote>

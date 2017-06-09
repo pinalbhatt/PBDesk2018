@@ -6,6 +6,7 @@ categories:
 date: 2017-05-17
 youtube_id: eOBq__h4OJ4
 image: AWS-Lambda-Useful-links.png
+featured: true
 ---
 
 Configure your Lambda functions like a champ and let your code sail smoothly to Production

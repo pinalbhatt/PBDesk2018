@@ -1,10 +1,10 @@
 ---
 title: Unit Testing Node.JS With Mocha
-tags: [NodeJS, Javascript]
+tags: [NodeJS, Javascript, UnitTesting]
 categories:
   - Tutorials
-date:  2014-08-24 13:53:56
-image: /assets/images/2014/Mocha-Logo-720x340.png
+date: 2015-08-24
+image: Mocha-Logo-720x340.png
 ---
 <p>My google research for "node js mocha tutorial"</p>
 <h2>1. <a href="http://visionmedia.github.io/mocha/" target="_blank">Official web site for Mocha</a></h2>

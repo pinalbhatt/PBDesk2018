@@ -3,8 +3,8 @@ title: ASP.Net MVC 6 - Whats New?
 tags: [MVC6, WebAPI]
 categories:
   - ASP.Net
-date: 2014-11-05 13:33:45
-image: /assets/images/2014/MVC6-720x340.jpg
+date: 2014-11-05
+image: MVC6-720x340.jpg
 ---
 <p style="text-align: justify;">Asp.Net vNext (http://asp.net/vNext) is the official place where we learn about next generation of Microsoft's ASP.Net framework. As of 2014 vNext is MVC 6! Yes MVC 6 is the new cool major overhaul over previous ASP.Net. Recently, Microsoft announced the preview availability of this product.</p>
 <blockquote><p>ASP.NET vNext is a lean and composable framework for building web and cloud applications. ASP.NET vNext is fully open source and available on <a href="http://github.com/aspnet/home" target="_blank">GitHub</a>.</p></blockquote>
