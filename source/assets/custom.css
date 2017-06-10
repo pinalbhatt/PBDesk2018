@@ -24,3 +24,11 @@
 .ms-footer-media .media-footer {
   padding-left: 30px;
 }
+
+.ms-carousel .carousel-indicators li {
+  background-color: #cccccc;
+}
+
+.ms-carousel .carousel-indicators li.active {
+  background-color: #999999;
+}

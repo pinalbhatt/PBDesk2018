@@ -1,5 +1,6 @@
 ---
 title: My Blogging Journey
+description: Discussing my blogging journey since 2007 and various CMS & blogging engines.
 tags: [CMS, MyBlog, MyProj]
 categories:
   - Blogging

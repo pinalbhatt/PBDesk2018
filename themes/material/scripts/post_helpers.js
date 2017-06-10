@@ -39,8 +39,3 @@ hexo.extend.helper.register('post_img', function(item){
   const d = getShareData(item);
   return item.image ? `${item.permalink}${item.image}` : '/assets/images/default_post.png'
 });
-
-/*
-item.image ? `${item.permalink}${item.image}` : theme.default_post_image
-
-    */

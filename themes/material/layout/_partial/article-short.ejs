@@ -20,8 +20,8 @@
             <h2>
                 <a href="<%- url_for(item.path) %>"><%- item.title || theme.default_post_title || __('default_post_title') %></a>
             </h2>
-            <%= strip_html(item.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 300) %>
-            <p></p>
+
+            <p class="hidden-xs hidden-sm"><%= strip_html(item.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 300) %></p>
 
             <div class="row">
                 <div class="col-lg-6 col-md-4">

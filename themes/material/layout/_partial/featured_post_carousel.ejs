@@ -1,0 +1,34 @@
+<div id="carousel-home-blog" class="carousel ms-carousel slide card" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <% site.posts.find({featured: true}).limit(5).each(function(slide, idx){ %>
+        <li data-target="#carousel-home-blog" data-slide-to="<%- idx %>" class="<%- idx==0?'active': '' %>"></li>
+        <% }) %>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <% site.posts.find({featured: true}).limit(5).each(function(slide, idx){ %>
+        <div class="item <%- idx===0?'active': '' %>">
+            <a href="<%- url_for(slide.path) %>">
+            <img src="<%- post_img(slide)  %>" class="img-responsive" alt="...">
+            <div class="carousel-caption-blog">
+
+                <h2 class="color-primary"><%- slide.title %></h2>
+                <%
+                    var subtitle = '';
+                    if (slide.description){
+                        subtitle  = slide.description
+                    }
+                    else {
+                      subtitle = strip_html(slide.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 100);
+                      subtitle += '...'
+                    }
+                %>
+                <p class="hidden-xs"><%= subtitle %></p>
+
+            </div>
+            </a>
+        </div>
+        <% }) %>
+    </div>
+</div>
