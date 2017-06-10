@@ -85,8 +85,10 @@ jsonFeed:
 sitemap:
     path: sitemap.xml
 
+hfc_css:
+  enable: true
 hfc_html:
-  enable: false
+  enable: true
 hfc_useref:
   enable: false
 hfc_js:
@@ -124,15 +126,6 @@ hfc_favicons:
 stagings:
   prod:
     url: http://pbdesk.com
-    hfc_css:
-      enable: true
-      exclude:
-        - '*.min.css'
   dev:
     url: http://dev.pbdesk.com:4200
-    hfc_css:
-      enable: false
-      exclude:
-        - '*.min.css'
-
 
