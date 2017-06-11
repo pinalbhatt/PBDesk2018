@@ -63,7 +63,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: material
-themeSkin: orange-600
+themeSkin: blue-grey-600
 
 category_generator:
   per_page: 10
